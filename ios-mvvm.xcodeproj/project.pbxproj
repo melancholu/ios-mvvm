@@ -29,6 +29,12 @@
 		AC8178C0280C16F800A43EA0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8178BF280C16F800A43EA0 /* UIColor.swift */; };
 		AC8178C2280C170300A43EA0 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8178C1280C170300A43EA0 /* UIFont.swift */; };
 		AC8178C4280C17C100A43EA0 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8178C3280C17C100A43EA0 /* ViewModel.swift */; };
+		AC8178C6280C1ED100A43EA0 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8178C5280C1ED100A43EA0 /* BaseService.swift */; };
+		AC8178C9280C1EFD00A43EA0 /* AlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8178C8280C1EFD00A43EA0 /* AlamofireManager.swift */; };
+		AC8178CB280C1F0600A43EA0 /* UrlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8178CA280C1F0600A43EA0 /* UrlManager.swift */; };
+		AC8178CD280C1F6100A43EA0 /* NetworkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8178CC280C1F6100A43EA0 /* NetworkState.swift */; };
+		AC8178CF280C1F7300A43EA0 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8178CE280C1F7300A43EA0 /* Service.swift */; };
+		AC8178D1280C1FE100A43EA0 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8178D0280C1FE100A43EA0 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +83,12 @@
 		AC8178BF280C16F800A43EA0 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		AC8178C1280C170300A43EA0 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		AC8178C3280C17C100A43EA0 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		AC8178C5280C1ED100A43EA0 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		AC8178C8280C1EFD00A43EA0 /* AlamofireManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireManager.swift; sourceTree = "<group>"; };
+		AC8178CA280C1F0600A43EA0 /* UrlManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlManager.swift; sourceTree = "<group>"; };
+		AC8178CC280C1F6100A43EA0 /* NetworkState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkState.swift; sourceTree = "<group>"; };
+		AC8178CE280C1F7300A43EA0 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		AC8178D0280C1FE100A43EA0 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		BFD41F4AD898B1E04EBDEFD5 /* Pods-ios-mvvm-ios-mvvmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-mvvm-ios-mvvmUITests.release.xcconfig"; path = "Target Support Files/Pods-ios-mvvm-ios-mvvmUITests/Pods-ios-mvvm-ios-mvvmUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C8FF6E78BCAF6C9C16BA8FBA /* Pods-ios-mvvm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-mvvm.debug.xcconfig"; path = "Target Support Files/Pods-ios-mvvm/Pods-ios-mvvm.debug.xcconfig"; sourceTree = "<group>"; };
 		C9984017E43B3F121E6723B8 /* Pods_ios_mvvm_ios_mvvmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_mvvm_ios_mvvmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,7 +133,6 @@
 				F4E19A9459A477504AD2F9C0 /* Pods-ios-mvvmTests.debug.xcconfig */,
 				787C001F8EB0F6E7D0CC7C05 /* Pods-ios-mvvmTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -211,6 +222,7 @@
 		AC8178AC280C154700A43EA0 /* service */ = {
 			isa = PBXGroup;
 			children = (
+				AC8178D0280C1FE100A43EA0 /* UserService.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -220,6 +232,7 @@
 			children = (
 				AC8178B7280C166200A43EA0 /* enum */,
 				AC8178B8280C166700A43EA0 /* extension */,
+				AC8178C7280C1EED00A43EA0 /* manager */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -227,6 +240,7 @@
 		AC8178B0280C15F600A43EA0 /* base */ = {
 			isa = PBXGroup;
 			children = (
+				AC8178C5280C1ED100A43EA0 /* BaseService.swift */,
 				AC8178B3280C164400A43EA0 /* BaseViewController.swift */,
 				AC8178B5280C164A00A43EA0 /* BaseViewModel.swift */,
 			);
@@ -236,6 +250,8 @@
 		AC8178B7280C166200A43EA0 /* enum */ = {
 			isa = PBXGroup;
 			children = (
+				AC8178CC280C1F6100A43EA0 /* NetworkState.swift */,
+				AC8178CE280C1F7300A43EA0 /* Service.swift */,
 			);
 			path = enum;
 			sourceTree = "<group>";
@@ -250,6 +266,15 @@
 				AC8178C1280C170300A43EA0 /* UIFont.swift */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		AC8178C7280C1EED00A43EA0 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				AC8178C8280C1EFD00A43EA0 /* AlamofireManager.swift */,
+				AC8178CA280C1F0600A43EA0 /* UrlManager.swift */,
+			);
+			path = manager;
 			sourceTree = "<group>";
 		};
 		B296CAAF7C12E854D356B8C6 /* Frameworks */ = {
@@ -504,15 +529,21 @@
 			files = (
 				AC8178BC280C16C100A43EA0 /* DesignableView.swift in Sources */,
 				AC8178B4280C164400A43EA0 /* BaseViewController.swift in Sources */,
+				AC8178D1280C1FE100A43EA0 /* UserService.swift in Sources */,
 				AC8178AF280C159300A43EA0 /* User.swift in Sources */,
+				AC8178CB280C1F0600A43EA0 /* UrlManager.swift in Sources */,
 				AC8178BE280C16DD00A43EA0 /* String.swift in Sources */,
 				AC8178BA280C167F00A43EA0 /* Array.swift in Sources */,
 				AC81787E280C14F900A43EA0 /* ViewController.swift in Sources */,
 				AC8178C2280C170300A43EA0 /* UIFont.swift in Sources */,
+				AC8178CD280C1F6100A43EA0 /* NetworkState.swift in Sources */,
+				AC8178C6280C1ED100A43EA0 /* BaseService.swift in Sources */,
 				AC81787A280C14F900A43EA0 /* AppDelegate.swift in Sources */,
+				AC8178CF280C1F7300A43EA0 /* Service.swift in Sources */,
 				AC81787C280C14F900A43EA0 /* SceneDelegate.swift in Sources */,
 				AC8178B6280C164A00A43EA0 /* BaseViewModel.swift in Sources */,
 				AC8178C4280C17C100A43EA0 /* ViewModel.swift in Sources */,
+				AC8178C9280C1EFD00A43EA0 /* AlamofireManager.swift in Sources */,
 				AC8178C0280C16F800A43EA0 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
